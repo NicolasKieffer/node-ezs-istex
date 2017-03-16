@@ -20,13 +20,16 @@
   },
   "homepage": "https://github.com/touv/node-ezs-istex#readme",
   "dependencies": {
+    "async": "^2.1.5",
     "clone": "^2.1.0",
     "dot-prop": "^4.1.0",
     "qs": "^6.3.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "sha1": "^1.1.1"
   },
   "devDependencies": {
     "ezs": "^1.1.0",
-    "ezs-basics": "^1.0.0"
+    "ezs-basics": "^1.0.0",
+    "li-utils": "git+ssh://vsistex.intra.inist.fr:22222/istex/li-utils.git"
   }
 }
