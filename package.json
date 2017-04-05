@@ -1,6 +1,6 @@
 {
   "name": "ezs-istex",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "istex statements form EZS",
   "main": "index.js",
   "directories": {
@@ -25,9 +25,16 @@
     "dot-prop": "^4.1.0",
     "qs": "^6.3.0",
     "request": "^2.79.0",
-    "sha1": "^1.1.1"
+    "sha1": "^1.1.1",
+    "xml-mapping": "^1.7.1"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
     "ezs": "^1.1.0",
     "ezs-basics": "^1.0.0",
     "rd-teeft": "git+ssh://vsistex.intra.inist.fr:22222/istex/rd-teeft.git",
