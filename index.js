@@ -7,5 +7,6 @@ module.exports = {
   ISTEXRequest: require('./lib/request.js'),
   ISTEXHits: require('./lib/hits.js'),
   ISTEXDownload: require('./lib/download.js'),
+  ISTEXKeywords: require('./lib/keywords.js'),
   ISTEXInitCorpus: require('./lib/initCorpus.js')
 }
