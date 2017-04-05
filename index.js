@@ -9,7 +9,7 @@ module.exports =  {
   ISTEXHits: require('./lib/hits.js'),
   ISTEXDownload: require('./lib/download.js'),
   ISTEXKeywords: require('./lib/keywords.js'),
-  ISTEXInitCorpus: require('./lib/initCorpus.js'),
+  ISTEXInitCorpus: require('./lib/init-corpus.js'),
   ISTEXMods: require('./lib/mods.js'),
   ISTEXParseXML: require('./lib/parse-xml.js')
 }
