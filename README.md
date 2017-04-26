@@ -47,7 +47,7 @@ utils.corpusManager.init(filename, outputDir, function(err, res) {
 
 ## Statements
 
-###ISTEXDownload
+### ISTEXDownload
 
 *Come after : ISTEXRequest*
 
@@ -65,7 +65,7 @@ This plugin will download the selected file contained in the result of ISTEX API
 }))
 ```
 
-###ISTEXRegroup
+### ISTEXRegroup
 
 *Come after : ISTEXKeywords (for example)*
 
@@ -95,7 +95,7 @@ will be transformed into :
 }
 ```
 
-###ISTEXGraph
+### ISTEXGraph
 
 *Come after : (ISTEXKeywords && ISTEXRegroup)*
 
@@ -109,7 +109,7 @@ This plugin create a graph document-document with keywords
 }))
 ```
 
-###ISTEXKeywords
+### ISTEXKeywords
 
 *Come after : (ISTEXDownload)*
 
