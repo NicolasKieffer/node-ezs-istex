@@ -8,43 +8,6 @@ This package cannot be used alone. EZS has to be installed.
 var ezs = require('ezs');
 ezs.use(require('ezs-istex'));
 ```
-
-## Example ##
-
-```js
-/*
- * It will download the corpus and print the result in stdout
- */
-
-var filename = 'myFile.corpus', // Contains all corpora
-  outputDir = '/my/output/path/'; // Path of your output directory
-utils.corpusManager.init(filename, outputDir, function(err, res) {
-  if (err) return err;
-  console.log(res);
-  fs.createReadStream(res.file)
-    .pipe(ezs('stringify'))
-    .pipe(ezs('ISTEXCorpus'))
-    .pipe(ezs('ISTEXQuery', {
-      params: {
-        output: "id,fulltext"
-      }
-    }))
-    .pipe(ezs('ISTEXHarvest'))
-    .pipe(ezs('ISTEXRequest'))
-    .pipe(ezs('ISTEXDownload', {
-      criteria: {
-        "extension": "txt",
-        "original": false,
-        "mimetype": "text/plain"
-      },
-      key:"fulltext",
-      out: res.in
-    }))
-    .pipe(ezs('jsonify'))
-    .pipe(process.stdout);
-  });
-```
-
 ## Statements
 
 ### ISTEXDownload
